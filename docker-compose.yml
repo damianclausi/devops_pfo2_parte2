@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  devops-pfo2-frontend:
+    build: .
+    container_name: devops_pfo2_parte2_app
+    ports:
+      - "3000:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
+    networks:
+      - frontend-network
+
+networks:
+  frontend-network:
+    driver: bridge
