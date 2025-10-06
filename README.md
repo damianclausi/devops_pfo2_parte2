@@ -1,98 +1,168 @@
-# 💻 Proyecto React - Grupo 1
+# � DevOps PFO## 📋 Descripción del Proyecto
 
-Trabajo Práctico Grupal 1  
-Tecnicatura en Desarrollo de Software – IFTS N.º 29  
-Entrega: 26 de mayo
+Este repositorio contiene el proyecto de programación Web (front end) desarrollado con **React** y **Vite**, completamente **dockerizado** para facilitar el despliegue y desarrollo en contenedores.
 
----
+**Basado en:** https://github.com/damianclausi/tp1-react-grupo1arte 2 - Proyecto Programación Web (Front End)
 
-## 📘 Descripción
+**Repositorio:** https://github.com/damianclausi## � Equipo de Desarrollo
 
-Este proyecto es una **Single Page Application (SPA)** desarrollada con **React**, en el marco de un trabajo práctico grupal.  
-La aplicación incluye navegación entre secciones, carga dinámica de datos desde archivo JSON y consumo de una API externa en tiempo real.  
-El desarrollo fue realizado de forma colaborativa, empleando herramientas modernas para control de versiones y despliegue.
-
----
-
-## 👥 Integrantes
-
-| Nombre completo           | Rol en el proyecto                     |
-|---------------------------|----------------------------------------|
-| Damián Andrés Clausi      | Desarrollo de interfaz y navegación    |
-| Antonio Gill              | Integración de API externa             |
-| Cristian Descosido        | Gestión de contenido y datos locales   |
-| Rocío Ailén Gómez         | Diseño visual y adaptabilidad responsive |
+| Nombre                | Responsabilidad                    |
+|----------------------|-----------------------------------|
+| Damián Andrés Clausi | Desarrollo y configuración Docker |pfo2_parte2  
+**Materia:** Programación Web (Front End)  
+**Fecha:** Octubre 2025
 
 ---
 
-## 🧱 Contenidos del proyecto
+## � Descripción del Proyecto
 
-- Barra lateral de navegación (Sidebar)
-- Página de presentación del grupo
-- Secciones individuales por integrante
-- Carga de datos desde archivo JSON (películas)
-- Consumo de API pública (precios de criptomonedas con CoinGecko)
-- Bitácora del trabajo grupal
+Este repositorio contiene el proyecto de programación Web (front end) desarrollado con **React** y **Vite**, completamente **dockerizado** para facilitar el despliegue y desarrollo en contenedores.
 
----
+### 🎯 Objetivos DevOps Cumplidos
 
-## 🛠️ Tecnologías utilizadas
-
-- React
-- Vite
-- React Router DOM
-- CoinGecko API
-- Git y GitHub
-- Vercel
+✅ **Repositorio GitHub creado** con `gh devops_pfo2_parte2`  
+✅ **Contenedor Docker** configurado con todos los servicios necesarios  
+✅ **Documentación completa** con comandos de ejecución y puertos  
+✅ **Preparado para Docker Hub** con instrucciones de subida
 
 ---
 
-## 🌐 Enlaces
+## �️ Stack Tecnológico
 
-- 🔗 GitHub: [https://github.com/damianclausi/tp1-react-grupo1](https://github.com/damianclausi/tp1-react-grupo1)
-- 🔗 Vercel: [https://tp1-react-grupo1.vercel.app](https://tp1-react-grupo1.vercel.app)
-
----
-
-## 📌 Organización y metodología
-
-El trabajo fue desarrollado de manera grupal, utilizando herramientas como **Trello**, **Discord** y **GitHub** para la comunicación, seguimiento de tareas y control de versiones.  
-Cada integrante aportó en una sección específica del proyecto y se trabajó de forma colaborativa durante todo el proceso.
----
-
-## 🚀 Instalación y ejecución local
-
-Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
-
-1. **Clona el repositorio:**
-   
-   ```powershell
-   git clone https://github.com/damianclausi/tp1-react-grupo1.git
-   ```
-
-2. **Accede a la carpeta del proyecto:**
-   
-   ```powershell
-   cd tp1-react-grupo1
-   ```
-
-3. **Instala las dependencias:**
-   
-   ```powershell
-   npm install
-   ```
-
-4. **Inicia la aplicación en modo desarrollo:**
-   
-   ```powershell
-   npm run dev
-   ```
-
-5. **Abre la aplicación en tu navegador:**
-   
-   Normalmente se abrirá automáticamente en `http://localhost:5173/`. Si no, abre esa URL manualmente.
+- **React 19.1.0** - Biblioteca de JavaScript para interfaces de usuario
+- **Vite 6.3.5** - Herramienta de construcción y desarrollo rápido
+- **React Router DOM** - Navegación entre páginas
+- **React Icons** - Iconografía
+- **Docker** - Contenedorización
+- **Node.js 20 Alpine** - Imagen base del contenedor
 
 ---
 
-> Proyecto entregado como parte del Trabajo Práctico 1  
-> Grupo 1 – Tecnicatura en Desarrollo de Software – IFTS N.º 29
+## 🐳 Ejecución con Docker
+
+### Prerrequisitos
+- Docker instalado
+- Docker Compose instalado
+
+### 🚀 Comando para ejecutar el proyecto
+
+```bash
+# Construir y ejecutar el contenedor
+docker-compose up --build
+
+# Ejecutar en segundo plano (recomendado)
+docker-compose up -d --build
+```
+
+### 🌐 Acceso a la aplicación
+
+- **URL:** http://localhost:3000
+- **Puerto del host:** 3000
+- **Puerto del contenedor:** 5173
+
+### ⏹️ Detener el contenedor
+
+```bash
+docker-compose down
+```
+
+---
+
+## � Docker Hub
+
+### Subir imagen a Docker Hub
+
+```bash
+# Hacer login en Docker Hub
+docker login
+
+# Construir imagen con tag para Docker Hub
+docker build -t damian2k/devops-pfo2-frontend:latest .
+
+# Subir imagen
+docker push damian2k/devops-pfo2-frontend:latest
+```
+
+### Ejecutar desde Docker Hub
+
+```bash
+# Descargar y ejecutar
+docker run -p 3000:5173 damian2k/devops-pfo2-frontend:latest
+```
+
+---
+
+## � Estructura del Proyecto
+
+```
+src/
+├── components/          # Componentes reutilizables
+│   ├── Cristian/       # Componentes específicos
+│   ├── Sidebar.jsx     # Navegación lateral
+│   └── TopNavbar.jsx   # Barra superior
+├── pages/              # Páginas de la aplicación
+│   ├── Home.jsx        # Página principal
+│   ├── ApiData/        # Páginas de APIs
+│   └── [otros].jsx     # Páginas individuales
+├── assets/             # Recursos estáticos
+├── data/               # Datos JSON
+├── App.jsx             # Componente raíz
+└── main.jsx            # Punto de entrada
+
+public/                 # Archivos públicos
+├── caratulas/          # Imágenes de películas
+└── vite.svg           # Logo de Vite
+
+# Archivos Docker
+Dockerfile              # Definición del contenedor
+docker-compose.yml      # Orquestación de servicios
+.dockerignore          # Archivos excluidos del build
+```
+
+---
+
+## 🔧 Desarrollo Local (sin Docker)
+
+Si prefieres ejecutar sin Docker:
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+
+# Previsualizar build
+npm run preview
+```
+
+---
+
+## 📝 Características del Contenedor
+
+- **Imagen base:** node:20-alpine (liviana y segura)
+- **Puerto expuesto:** 5173
+- **Puerto mapeado:** 3000 → 5173
+- **Volúmenes:** Código fuente sincronizado para desarrollo
+- **Hot reload:** Habilitado para desarrollo en tiempo real
+- **Red:** frontend-network para comunicación entre contenedores
+
+---
+
+## 🌟 Funcionalidades de la Aplicación
+
+- ✨ Single Page Application (SPA) con React
+- 🧭 Navegación con React Router
+- 📊 Consumo de APIs externas (CoinGecko, DragonBall, etc.)
+- 🎬 Gestión de datos locales (películas desde JSON)
+- 📱 Diseño responsivo
+- 🎨 Interfaz moderna y atractiva
+
+---
+
+> **Proyecto desarrollado para DevOps PFO2 Parte 2**  
+> Tecnicatura en Desarrollo de Software  
+> Octubre 2025
