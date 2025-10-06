@@ -19,6 +19,12 @@ Este repositorio contiene el proyecto de programación Web (front end) desarroll
 **Documentación completa** con comandos de ejecución y puertos  
 **Preparado para Docker Hub** con instrucciones de subida
 
+### Prueba del Sistema
+
+![Prueba Docker](screenshots/pruebedocker.jpg)
+
+*Sistema ejecutándose correctamente en contenedor Docker*
+
 ---
 
 ## Stack Tecnológico
