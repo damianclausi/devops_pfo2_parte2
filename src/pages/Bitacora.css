@@ -1,0 +1,31 @@
+.bitacora-body {
+  padding: 2em;
+  margin-left: 15rem;
+}
+
+.bitacora-body h2 {
+  text-align: center;
+  padding: 1em;
+  font-size: 3.5em;
+  color: rgb(91, 59, 206);
+}
+
+.bitacora-body h3 {
+  text-align: left;
+  font-size: 1.5em;
+  color: rgb(91, 59, 206);
+}
+
+.bitacora-body ul {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+    .bitacora-body {
+        margin-left: 0;
+    }
+    
+    .bitacora-body h2 {
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,85 @@
+.api-data-contenedor {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.api-data-contenedor h2 {
+  text-align: center;
+  padding: 1em;
+  font-size: 3.5em;
+  color: rgb(91, 59, 206);
+}
+
+.api-data-contenedor h3 {
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: rgb(91, 59, 206);
+}
+
+.api-data-contenedor h4 {
+  padding: 0.5em;
+  font-size: 1.2em;
+  color: rgb(91, 59, 206);
+}
+
+/* Flex layout */
+.api-data-contenedor .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Dos tarjetas por fila */
+.api-data-contenedor .tarjeta {
+  flex: 1 1 48%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.api-data-contenedor .tarjeta ul {
+  list-style: none;
+}
+
+/* 1 tarjeta por fila en pantallas menores a 768px */
+@media (max-width: 768px) {
+  .api-data-contenedor {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .api-data-contenedor .tarjeta {
+    flex: 1 1 100%;
+  }
+
+  .api-data-contenedor h2 {
+    font-size: 2.5em;
+  }
+
+  .api-data-contenedor h3 {
+    font-size: 1.2em;
+  }
+
+  .api-data-contenedor h4 {
+    font-size: 1em;
+  }
+
+  .api-data-contenedor .tarjeta {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .api-data-contenedor audio {
+    width: 12em;
+  }
+}

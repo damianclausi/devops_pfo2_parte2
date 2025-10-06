@@ -1,0 +1,219 @@
+/* Damian.css - Colores modo claro del portfolio personal */
+
+.damian-container {
+  width: 40vw;
+  margin: 3em auto; /* Espaciado arriba y abajo igual que .rocio-body .header */
+  border-radius: 40px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background-color: #fff; /* Fondo blanco restaurado */
+  /* Elimina o comenta background-image y gradientes para fondo blanco */
+  /* background-image: none; */
+  /* background-repeat: none; */
+  /* background-size: none; */
+  box-sizing: border-box;
+  padding: 2rem 2.5rem;
+}
+
+.damian-container h2 {
+  margin-top: 0.5em; /* Espacio arriba igual que abajo */
+  color: #3b5bdb; /* Color original de Damian */
+  font-size: 2em;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.damian-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto;
+  border: 3px solid #3b5bdb;
+  box-shadow: 0 2px 8px rgba(59, 91, 219, 0.1);
+  display: block;
+}
+
+.damian-container h3 {
+  color: #3b5bdb; /* Color original de Damian */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
+}
+
+.damian-container ul,
+.damian-container ol {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.damian-container li {
+  margin-bottom: 0.4rem;
+}
+
+.damian-tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.damian-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-bottom: 3em;
+}
+
+.damian-container a,
+.damian-container .damian-contact a {
+  color: #3b5bdb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.damian-container a:hover,
+.damian-container .damian-contact a:hover {
+  color: #e53170;
+  text-decoration: underline;
+}
+
+.damian-container p {
+  line-height: 1.6;
+}
+
+.damian-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.damian-project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(35, 41, 70, 0.07);
+  padding: 1rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s;
+}
+
+.damian-project-card:hover {
+  box-shadow: 0 4px 16px rgba(59, 91, 219, 0.13);
+}
+
+.damian-project-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  background: #f8fafc;
+  border: 1px solid #e0e0e0;
+}
+
+.damian-project-desc {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.98rem;
+  color: #444;
+}
+
+.damian-contact a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.1rem;
+  padding: 0.4em 1em;
+  border-radius: 8px;
+  background: transparent; /* Cambia el fondo a transparente */
+  box-shadow: none; /* Elimina la sombra */
+  border: none; /* Elimina el borde */
+  transition: background 0.2s, color 0.2s;
+}
+
+.damian-contact a:hover {
+  background: #e6eaff;
+  color: #e53170;
+}
+
+.damian-contact a img {
+  background: transparent !important;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .damian-container {
+    width: 90vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .damian-project-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.8rem 0.7rem;
+  }
+  .damian-project-thumb {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .damian-tech {
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  .damian-contact {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  .damian-container h2 {
+    font-size: 1.3em;
+    padding: 0.5em;
+  }
+  .damian-container h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .damian-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .damian-contact a {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.5em 0.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .damian-container {
+    width: 98vw;
+    padding: 0.5rem 0.2rem;
+    border-radius: 18px;
+  }
+  .damian-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .damian-project-thumb {
+    max-width: 100px;
+  }
+}

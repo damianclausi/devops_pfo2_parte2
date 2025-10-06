@@ -1,0 +1,256 @@
+/* Estilos generales y reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rocio-body {
+  width: 40vw;
+  margin: auto;
+  border-radius: 40px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background-color: #0d1117;
+  background-image: radial-gradient(
+      circle at 20% 30%,
+      #ff009d6b,
+      transparent 40%
+    ),
+    radial-gradient(circle at 70% 60%, rgba(102, 0, 255, 0.2), transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 0, 102, 0.15), transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  /* margin-left: 40rem; */
+}
+/* Encabezado */
+.rocio-body .header {
+  margin-top: 3em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rocio-body .header h2 {
+  margin-top: 3em;
+  color: #fa85cdce;
+  font-size: 2em;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* Estilos generales para las secciones */
+.rocio-body .section {
+  width: 100%;
+  height: auto;
+  padding: 3em 5em;
+  max-width: 75em;
+  margin: 0 auto;
+  color: white;
+}
+
+.rocio-body .section h2 {
+  color: #fa85cdce;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.rocio-body .sobre-mi-content .texto {
+  flex: 1;
+  min-width: 12em;
+  text-align: center;
+}
+
+.rocio-body .header .profile-img {
+  width: 120px;
+  height: 120px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Tarjetas (proyectos)*/
+.rocio-tarjeta {
+  display: flex;
+  height: 20em;
+  /* flex-direction: row; */
+  flex-direction: row;
+  background-color: #be54544b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 0, 106, 0.2);
+  margin: 2rem 0;
+}
+
+.rocio-tarjeta .imagen-wrapper {
+  flex: 7; /*La imagen va a ocupar el 70% del contenedor*/
+  overflow: hidden;
+  position: relative;
+}
+
+.rocio-tarjeta .imagen-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+}
+
+.rocio-tarjeta .imagen-wrapper:hover img {
+  transform: scale(1.5) translate(-10px, -10px);
+}
+.rocio-tarjeta .texto {
+  flex: 3; /*El texto solo ocupa el 30% del contenedor*/
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a0a0ab2;
+}
+
+.rocio-tarjeta .texto h3 {
+  font-size: 1.2rem;
+  color: #fa85cdce;
+  margin-bottom: 1rem;
+}
+
+.rocio-tarjeta .texto p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.rocio-tarjeta .invertida {
+  flex-direction: row-reverse;
+}
+
+/* Sección de habilidades */
+.rocio-body .habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.rocio-body .habilidades-col {
+  flex: 1;
+  min-width: 15em;
+  background: rgba(255, 255, 255, 0.226);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rocio-body .habilidades-col h3 {
+  color: #fa85cdce;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #522440ce;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.rocio-body .habilidades-col ul {
+  list-style-position: inside;
+  list-style: none; /* elimina los estilos de la unorder list */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1.25em; /* espacio entre los íconos */
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.rocio-body .habilidades-col li {
+  margin-bottom: 0.5rem;
+  list-style: None;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rocio-body .icono {
+  height: 2em;
+  width: 2em;
+}
+
+/* Pie de página */
+.rocio-body .footer {
+  color: white;
+  background-color: #2e1424ce;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.rocio-body .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rocio-body .social-links img {
+  height: 2em;
+  width: 2em;
+}
+.rocio-body .social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Media queries para responsive*/
+@media (max-width: 768px) {
+  /*Sección sobre mí*/
+  .rocio-body {
+    width: 100vw;
+    background-color: #0d1117;
+  }
+  .rocio-body .sobre-mi-content {
+    flex-direction: column;
+  }
+
+  .rocio-body .sobre-mi-content .texto {
+    font-size: 0.8em;
+    padding-right: 0%;
+  }
+
+  .rocio-body .profile-img {
+    margin-top: 1rem;
+    width: 10em;
+    height: 10em;
+  }
+
+  /*Proyectos (tarjetas)*/
+  .rocio-body .rocio-tarjeta {
+    display: flex;
+    height: 30em;
+    flex-direction: column;
+  }
+
+  .rocio-body .tarjeta.invertida {
+    flex-direction: column;
+  }
+
+  .rocio-tarjeta h2 {
+    font-size: 1.1em;
+  }
+
+  .rocio-body .icono {
+    height: 10vh;
+    width: 10vw;
+  }
+}

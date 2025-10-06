@@ -1,0 +1,48 @@
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 1rem;
+  background-color: rgb(0 0 0 / 0.05);
+  color: #333;
+  /* Color de texto de ejemplo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  /* Menor que el sidebar para que quede debajo al abrir */
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.app-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.top-navbar.hidden {
+  top: -6rem;
+  /* Ocultar la navbar moviéndola hacia arriba */
+  transition: top 0.3s ease;
+}
+
+.top-navbar.visible {
+  top: 0;
+  /* Mostrar la navbar */
+  transition: top 0.3s ease;
+}
+
+.icono-grupo {
+  height: 2rem;
+  /* Ajustar la altura de la imagen */
+  margin-right: 1rem;
+  /* Espacio entre la imagen y el botón */
+}

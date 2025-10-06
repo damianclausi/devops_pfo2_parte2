@@ -1,0 +1,61 @@
+* {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+}
+
+.json-data {
+  margin: auto;
+}
+
+.json-data h2 {
+  text-align: center;
+  padding: 1em;
+  font-size: 3.5em;
+  color: rgb(91, 59, 206);
+}
+
+.json-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.json-data-container h3 {
+  color: rgb(91, 59, 206);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.json-data-pelicula {
+  width: 15em;
+  height: 29em;
+}
+
+.json-data-pelicula img {
+  width: 10em;
+}
+
+@media (max-width: 768px) {
+  .json-data {
+    margin-left: 0;
+  }
+
+  .json-data-container {
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(231, 226, 255);
+  }
+
+  .json-data h2 {
+    font-size: 2.5em;
+  }
+
+  .json-data-pelicula {
+    width: 15em;
+    height: auto;
+  }
+}

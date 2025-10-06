@@ -1,0 +1,22 @@
+[
+  { "id": 1, "titulo": "El Padrino", "director": "Francis Ford Coppola", "anio": 1972, "caratula": "/caratulas/el-padrino.webp" },
+  { "id": 2, "titulo": "Pulp Fiction", "director": "Quentin Tarantino", "anio": 1994, "caratula": "/caratulas/pulp-fiction.webp" },
+  { "id": 3, "titulo": "Matrix", "director": "Lana y Lilly Wachowski", "anio": 1999, "caratula": "/caratulas/matrix.webp" },
+  { "id": 4, "titulo": "El Señor de los Anillos", "director": "Peter Jackson", "anio": 2001, "caratula": "/caratulas/el-senor-de-los-anillos.webp" },
+  { "id": 5, "titulo": "Forrest Gump", "director": "Robert Zemeckis", "anio": 1994, "caratula": "/caratulas/forrest-gump.webp" },
+  { "id": 6, "titulo": "Gladiador", "director": "Ridley Scott", "anio": 2000, "caratula": "/caratulas/gladiador.webp" },
+  { "id": 7, "titulo": "Titanic", "director": "James Cameron", "anio": 1997, "caratula": "/caratulas/titanic.webp" },
+  { "id": 8, "titulo": "Toy Story", "director": "John Lasseter", "anio": 1995, "caratula": "/caratulas/toy-story.webp" },
+  { "id": 9, "titulo": "Jurassic Park", "director": "Steven Spielberg", "anio": 1993, "caratula": "/caratulas/jurassic-park.webp" },
+  { "id": 10, "titulo": "Interestelar", "director": "Christopher Nolan", "anio": 2014, "caratula": "/caratulas/interestelar.webp" },
+  { "id": 11, "titulo": "Inception", "director": "Christopher Nolan", "anio": 2010, "caratula": "/caratulas/inception.webp" },
+  { "id": 12, "titulo": "El Rey León", "director": "Rob Minkoff", "anio": 1994, "caratula": "/caratulas/el-rey-leon.webp" },
+  { "id": 13, "titulo": "Coco", "director": "Lee Unkrich", "anio": 2017, "caratula": "/caratulas/coco.webp" },
+  { "id": 14, "titulo": "Up", "director": "Pete Docter", "anio": 2009, "caratula": "/caratulas/up.webp" },
+  { "id": 15, "titulo": "Amélie", "director": "Jean-Pierre Jeunet", "anio": 2001, "caratula": "/caratulas/amelie.webp" },
+  { "id": 16, "titulo": "Whiplash", "director": "Damien Chazelle", "anio": 2014, "caratula": "/caratulas/whiplash.webp" },
+  { "id": 17, "titulo": "La La Land", "director": "Damien Chazelle", "anio": 2016, "caratula": "/caratulas/la-la-land.webp" },
+  { "id": 18, "titulo": "Blade Runner", "director": "Ridley Scott", "anio": 1982, "caratula": "/caratulas/blade-runner.webp" },
+  { "id": 19, "titulo": "Avatar", "director": "James Cameron", "anio": 2009, "caratula": "/caratulas/avatar.webp" },
+  { "id": 20, "titulo": "El laberinto del fauno", "director": "Guillermo del Toro", "anio": 2006, "caratula": "/caratulas/el-laberinto-del-fauno.webp" }
+]

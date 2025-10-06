@@ -1,0 +1,37 @@
+/* Sección Habilidades - Usando Grid */
+.habilidades-listado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cristianContainer.dark-theme #habilidades {
+    background-color: #222222;
+}
+
+.habilidades-listado div {
+    background-color: light-dark(#e9ecef, #5D5962);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.habilidades-listado h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #f7914d;
+    padding-bottom: 5px;
+    color: #f7914d;
+}
+
+.cristianContainer.dark-theme .habilidades-listado h3 {
+    color: #272626;
+}
+
+.habilidades-listado li {
+    color: light-dark(#343a40, #dbd9dd);
+}
+
+@media (max-width: 768px) {
+    .habilidades-listado {
+        grid-template-columns: 1fr;
+    }
+}

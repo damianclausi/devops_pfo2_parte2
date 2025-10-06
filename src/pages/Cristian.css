@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.cristianContainer {
+  font-family: 'Roboto', sans-serif;
+  margin:auto;
+  margin-top: 3em;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  transition: background-color 0.8s ease;
+  width: 80vw;
+
+  --shadow-color: light dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  --bg-color-light: #f0f0e8;
+  --bg-color-dark: #1c2135;
+  --border-color-light: #1c2135;
+  --border-color-dark: #f0f0e8;
+  --sun-color: #fabc1c;
+  --moon-color: #fffdf2;
+  --day-bg-color: #0dbdf6;
+  --night-bg-color: #272a30;
+  --cloud-color: #fffdf2;
+  --star-color: #fffdf2;
+  --bg-color-light: #f0f0e8;
+  --bg-color-dark: #1c2135;
+}
+
+.cristianContainer h1,
+h2,
+h3 {
+  color: #333;
+}
+
+.cristianContainer h1 {
+  font-size: 3rem;
+}
+
+.cristianContainer h2 {
+  font-size: 2.5rem;
+}
+
+.cristianContainer a {
+  color:#333;
+  text-decoration: none;
+}
+
+.cristianContainer a:hover {
+  text-decoration: underline #f7914d;
+}
+
+.cristianContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cristianContainer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estructura Principal */
+.cristianContainer main section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 5px solid #f7914d;
+  background-color: #f1eded;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .cristianContainer {
+    width: 100vw;
+  }
+  .cristianContainer main section {
+    border-bottom: 5px solid #f7914d;
+    border-left: none;
+  }
+}
+
+/* Estilos para el tema oscuro */
+.cristianContainer.dark-theme {
+  background-color: #0A0A0A;
+  color: #f0f0e8;
+}
+
+
+
+.cristianContainer.dark-theme h1,
+.cristianContainer.dark-theme h2,
+.cristianContainer.dark-theme h3,
+.cristianContainer.dark-theme a {
+  color: #f1f1f1;
+}
+
+.cristianContainer.dark-theme a:hover {
+  text-decoration-color: #f7914d;
+}
+
+@media (max-width: 480px) {
+  .cristianContainer {
+    font-size: 14px;
+
+  }
+
+}

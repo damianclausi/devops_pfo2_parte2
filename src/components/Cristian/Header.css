@@ -1,0 +1,157 @@
+/* Estilos para el Header */
+header {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cristianContainer.dark-theme header {
+    background-color: #222222;
+}
+
+header h1 {
+    color: inherit;
+    margin: 0;
+    font-size: 3rem;
+}
+
+/*-----------------------Toogle Button---------------------------*/
+.theme-switcher-grid {
+    display: grid;
+    grid-template-columns: repeat(54, 1px);
+    grid-template-rows: repeat(24, 1px);
+    gap: 0;
+    position: relative;
+    background-color: var(--day-bg-color);
+    border-radius: 49px;
+    border: 0.5px solid var(--border-color-light);
+    cursor: pointer;
+    transition: background-color 0.8s ease, border-color 0.8s ease;
+    appearance: none;
+    padding: 0;
+    width: 54px;
+    height: 24px;
+}
+
+.theme-switcher-grid.night-theme {
+    background-color: var(--night-bg-color);
+    border-color: var(--border-color-dark);
+}
+
+.sun {
+    background-color: var(--sun-color);
+    grid-column: 3 / 23;
+    grid-row: 3 / 23;
+    border-radius: 50%;
+    transition: grid-column 0.8s ease, background-color 0.8s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.theme-switcher-grid.night-theme .sun {
+    grid-column: 33 / 53;
+    background-color: var(--moon-color);
+}
+
+.moon-overlay {
+    position: absolute;
+    border-radius: 50%;
+    transition: left 0.8s ease, background-color 0.8s ease;
+    z-index: 1;
+    background-color: var(--day-bg-color);
+}
+
+.theme-switcher-grid.night-theme .moon-overlay {
+    display: block;
+    left: calc(28 / 54 * 100%);
+    top: calc(4 / 24 * 100%);
+    width: 18px;
+    height: 18px;
+    background-color: var(--night-bg-color);
+}
+
+.cloud-ball {
+    background-color: var(--cloud-color);
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 1;
+}
+
+.cloud-ball-left {
+    grid-column: 10 / 19;
+    grid-row: 1 / 10;
+    transform: translate(0, 0);
+}
+
+.cloud-ball-middle {
+    grid-column: 18 / 27;
+    grid-row: 10 / 19;
+    transform: translate(0, 0);
+}
+
+.cloud-ball-right {
+    grid-column: 26 / 35;
+    grid-row: 1 / 10;
+    transform: translate(0, 0);
+}
+
+.cloud-ball-top {
+    grid-column: 18 / 27;
+    grid-row: 1 / 10;
+    transform: translate(0, 0);
+}
+
+.theme-switcher-grid.night-theme .cloud-ball {
+    transform: translate(20px, 0);
+    opacity: 0;
+}
+
+.star {
+    background-color: var(--star-color);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.star:nth-child(1) {
+    width: 2px;
+    height: 2px;
+    left: 35px;
+    top: 5px;
+}
+
+.star:nth-child(2) {
+    width: 3px;
+    height: 3px;
+    left: 45px;
+    top: 10px;
+}
+
+.star:nth-child(3) {
+    width: 2px;
+    height: 2px;
+    left: 38px;
+    top: 18px;
+}
+
+.star:nth-child(4) {
+    width: 2.5px;
+    height: 2.5px;
+    left: 50px;
+    top: 15px;
+}
+
+.theme-switcher-grid.night-theme .star {
+    opacity: 1;
+}
