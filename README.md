@@ -1,33 +1,27 @@
-# � DevOps PFO## 📋 Descripción del Proyecto
+# DevOps PFO2 PARTE 2
+# Descripción del Proyecto
 
 Este repositorio contiene el proyecto de programación Web (front end) desarrollado con **React** y **Vite**, completamente **dockerizado** para facilitar el despliegue y desarrollo en contenedores.
 
-**Basado en:** https://github.com/damianclausi/tp1-react-grupo1arte 2 - Proyecto Programación Web (Front End)
+**Basado en:** https://github.com/damianclausi/tp1-react-grupo1arte  - Proyecto Programación Web (Front End)
 
-**Repositorio:** https://github.com/damianclausi## � Equipo de Desarrollo
-
-| Nombre                | Responsabilidad                    |
-|----------------------|-----------------------------------|
-| Damián Andrés Clausi | Desarrollo y configuración Docker |pfo2_parte2  
-**Materia:** Programación Web (Front End)  
-**Fecha:** Octubre 2025
 
 ---
 
-## � Descripción del Proyecto
+## Descripción del Proyecto
 
 Este repositorio contiene el proyecto de programación Web (front end) desarrollado con **React** y **Vite**, completamente **dockerizado** para facilitar el despliegue y desarrollo en contenedores.
 
 ### 🎯 Objetivos DevOps Cumplidos
 
-✅ **Repositorio GitHub creado** con `gh devops_pfo2_parte2`  
-✅ **Contenedor Docker** configurado con todos los servicios necesarios  
-✅ **Documentación completa** con comandos de ejecución y puertos  
-✅ **Preparado para Docker Hub** con instrucciones de subida
+**Repositorio GitHub creado** con `gh devops_pfo2_parte2`  
+**Contenedor Docker** configurado con todos los servicios necesarios  
+**Documentación completa** con comandos de ejecución y puertos  
+**Preparado para Docker Hub** con instrucciones de subida
 
 ---
 
-## �️ Stack Tecnológico
+## Stack Tecnológico
 
 - **React 19.1.0** - Biblioteca de JavaScript para interfaces de usuario
 - **Vite 6.3.5** - Herramienta de construcción y desarrollo rápido
@@ -44,7 +38,7 @@ Este repositorio contiene el proyecto de programación Web (front end) desarroll
 - Docker instalado
 - Docker Compose instalado
 
-### 🚀 Comando para ejecutar el proyecto
+### Comando para ejecutar el proyecto
 
 ```bash
 # Construir y ejecutar el contenedor
@@ -54,13 +48,13 @@ docker-compose up --build
 docker-compose up -d --build
 ```
 
-### 🌐 Acceso a la aplicación
+### Acceso a la aplicación
 
 - **URL:** http://localhost:3000
 - **Puerto del host:** 3000
 - **Puerto del contenedor:** 5173
 
-### ⏹️ Detener el contenedor
+### Detener el contenedor
 
 ```bash
 docker-compose down
@@ -68,7 +62,7 @@ docker-compose down
 
 ---
 
-## � Docker Hub
+## Docker Hub
 
 ### Subir imagen a Docker Hub
 
@@ -77,22 +71,22 @@ docker-compose down
 docker login
 
 # Construir imagen con tag para Docker Hub
-docker build -t damian2k/devops-pfo2-frontend:latest .
+docker build -t tuUsuario/devops-pfo2-frontend:latest .
 
 # Subir imagen
-docker push damian2k/devops-pfo2-frontend:latest
+docker push tuUsuario/devops-pfo2-frontend:latest
 ```
 
 ### Ejecutar desde Docker Hub
 
 ```bash
 # Descargar y ejecutar
-docker run -p 3000:5173 damian2k/devops-pfo2-frontend:latest
+docker run -p 3000:5173 tuUsuario/devops-pfo2-frontend:latest
 ```
 
 ---
 
-## � Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 src/
@@ -121,7 +115,7 @@ docker-compose.yml      # Orquestación de servicios
 
 ---
 
-## 🔧 Desarrollo Local (sin Docker)
+## Desarrollo Local (sin Docker)
 
 Si prefieres ejecutar sin Docker:
 
@@ -141,7 +135,7 @@ npm run preview
 
 ---
 
-## 📝 Características del Contenedor
+## Características del Contenedor
 
 - **Imagen base:** node:20-alpine (liviana y segura)
 - **Puerto expuesto:** 5173
@@ -152,14 +146,14 @@ npm run preview
 
 ---
 
-## 🌟 Funcionalidades de la Aplicación
+## Funcionalidades de la Aplicación
 
-- ✨ Single Page Application (SPA) con React
-- 🧭 Navegación con React Router
-- 📊 Consumo de APIs externas (CoinGecko, DragonBall, etc.)
-- 🎬 Gestión de datos locales (películas desde JSON)
-- 📱 Diseño responsivo
-- 🎨 Interfaz moderna y atractiva
+-  Single Page Application (SPA) con React
+-  Navegación con React Router
+-  Consumo de APIs externas (CoinGecko, DragonBall, etc.)
+-  Gestión de datos locales (películas desde JSON)
+-  Diseño responsivo
+-  Interfaz moderna y atractiva
 
 ---
 
