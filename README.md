@@ -12,7 +12,7 @@ Este repositorio contiene el proyecto de programación Web (front end) desarroll
 
 Este repositorio contiene el proyecto de programación Web (front end) desarrollado con **React** y **Vite**, completamente **dockerizado** para facilitar el despliegue y desarrollo en contenedores.
 
-### 🎯 Objetivos DevOps Cumplidos
+### Objetivos DevOps Cumplidos
 
 **Repositorio GitHub creado** con `gh devops_pfo2_parte2`  
 **Contenedor Docker** configurado con todos los servicios necesarios  
@@ -32,7 +32,7 @@ Este repositorio contiene el proyecto de programación Web (front end) desarroll
 
 ---
 
-## 🐳 Ejecución con Docker
+## Ejecución con Docker
 
 ### Prerrequisitos
 - Docker instalado
